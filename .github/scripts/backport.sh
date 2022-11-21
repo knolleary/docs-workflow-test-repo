@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 
 function usage() {
-   echo "Backport a PR to the `maintenance` branch, via a new PR"
+   echo "Backport a PR to the 'maintenance' branch, via a new PR"
    echo
    echo "USAGE"
    echo "  backport <#PR>"
