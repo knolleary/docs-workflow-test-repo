@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Log github.ref
+        if: ${{ endsWith(github.ref, '.0') }}
         shell: bash
         run: |
           echo "GH_REF: $GH_REF"
