@@ -1,0 +1,15 @@
+name: Release Published
+on:
+  push:
+    tags:
+      - "v*.*.*"
+jobs:
+  any_name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log github.ref
+        shell: bash
+        run: |
+          echo "GH_REF: $GH_REF"
+        env:
+          GH_REF: ${{ github.ref }}
