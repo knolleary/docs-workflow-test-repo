@@ -1,10 +1,10 @@
 name: FlowForge Cloud Change Requests
 description: Used to request any configuration changes to either Staging or Production environments of FlowForge Cloud
 body:
-- type: checkboxes
-  attributes:
-    label: Environment
-    options:
+ - type: checkboxes
+   attributes:
+     label: Environment
+     options:
       - label: Staging
       - label: Production
  - type: input
